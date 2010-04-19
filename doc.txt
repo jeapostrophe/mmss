@@ -1,0 +1,61 @@
+_mmss_ : The McCarthy Magical Scheme System
+==========================================
+
+By Jay McCarthy <jay.mccarthy@gmail.com>
+
+Keywords: _dev_
+
+Introduction
+============
+
+Files
+====
+_bitmap.ss_
+_contract.ss_
+_date.ss_
+_hash-table.ss_
+_list.ss_
+_maybe.ss_
+_nmemo.ss_
+_number.ss_
+_path.ss_
+_permute.ss_
+_producer.ss_
+_read.ss_
+_sort.ss_
+_string.ss_
+_xexpr.ss_
+_xml.ss_
+
+_FILE.ss_
+---------------
+
+Require it like this:
+
+> (require (planet "FILE.ss" ("jaymccarthy" "mmss.plt" 1)))
+
+It provides the follow identifiers:
+
+_list.ss_
+---------------
+
+Require it like this:
+
+> (require (planet "list.ss" ("jaymccarthy" "mmss.plt" 1)))
+
+It provides the follow identifiers:
+
+> replace : alpha? alpha? (listof alpha?) -> (listof alpha?)
+
+> replace/op : (alpha? -> boolean?) (alpha? -> alpha?) (listof alpha?) -> (listof alpha?)
+
+> elem-ref : alpha? (listof alpha?) -> (maybe integer?)
+
+Example
+=======
+
+History
+======
+
+June 21st
+     * Initial
